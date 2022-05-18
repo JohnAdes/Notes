@@ -1,0 +1,31 @@
+
+    <main class="walletbg">
+
+        <div class="container">
+            <div class="row">
+
+                <form>
+
+                    <div class="form-row">
+
+                        <h2>Deposit Money:</h2>
+                        <input type="number" #balance id="txtbalance" placeholder="Enter amount"
+                            class="form-control my-2 p-3">
+
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-lg-7">
+                            <button type="reset" class="btn1 mt-3 mb-5" (click)="deposit(balance.value)"
+                                routerlink='/dashboard'>Deposit</button>
+
+
+                          
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </main>

@@ -1,0 +1,49 @@
+*{
+    text-align: center;
+   
+}
+
+body{
+
+        width:100vw;
+        height: 100vh; 
+        font-size: 0.88rem;
+        user-select: none;
+        overflow-x: hidden;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+         background-image:url("../../../assets/backgroundblue.png");
+
+}
+h2{
+    font-size:50px;
+    font-family:sans-serif;
+    font-weight:600;
+}
+
+.btn1{
+    border:none;
+    outline: none;
+    height: 50px;
+    width: 30%;
+    background-color:black;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.btn1:hover{
+    background: white;
+    border: 1px solid;
+    color:black;
+} 
+
+.walletbg{
+    position: static;
+    display: block;
+    width: 800px;
+    margin: 4rem auto;
+    background-color: white;
+
+    
+}

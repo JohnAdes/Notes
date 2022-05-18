@@ -1,0 +1,38 @@
+
+ <body>
+    <main class="Form my-4 mx-2">
+ 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 px-5 pt-5">
+                   <img src="../../assets/wallet.jpg" >
+                    <h1>iWallet</h1>
+                    <h4>Sign in to your account</h4>
+                    
+                  <form>
+
+                      <div class="form-row">
+                          <div class="col-lg-7">
+                              <input type="username" #username id="txtUsername" placeholder="Username" class="form-control my-2 p-3">
+                          </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-lg-7">
+                            <input type="password" #password id="txtPassword" placeholder="Password" class="form-control my-2 p-3">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-lg-7">
+                            <button class="btn1 mt-3 mb-5" (click)="login(username.value,password.value)"routerlink='/dashboard'>Login</button>        
+                        </div>
+                        </div>
+                        
+                        <p>Don't have an account? <a routerLink="/register">Register here</a></p>
+                  </form>
+              </div>
+            </div>
+        </div>
+  
+    </main>
+
+   

@@ -1,0 +1,21 @@
+<body>
+
+    <main class="walletbg">
+
+        <div class="container">
+            <div class="row">
+
+                <h2>Transfer Money</h2>
+                <p>Account id:</p>
+                <input #accountid placeholder="Enter account id"
+                    class="form-control my-2 p-3">
+                <p>Amount:</p>
+                <input #amount  placeholder="Enter amount" class="form-control my-2 p-3">
+                <button type="reset" class="btn1 mt-3 mb-5"  type="button" (click)="transfer(accountid.value,amount.value)">Send Money</button>
+
+
+            </div>
+        </div>
+
+    </main>
+

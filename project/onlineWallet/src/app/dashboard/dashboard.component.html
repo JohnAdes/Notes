@@ -1,0 +1,85 @@
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex flex-column">
+            <aside>
+                
+                <div class="top">
+                    <div class="logo">
+                        <img src="../../assets/wallet.jpg">
+
+
+                        <h2>iWallet</h2>
+
+                    </div>
+                </div>
+                <span id="datetime"></span>
+                <script>
+                    var dt = new Date();
+                    document.getElementById('date-time').innerHTML=dt;
+                </script>
+                <h4> Welcome, {{username}}!</h4>
+                <div class="sidebar">
+                
+                <!-- <a  class="active">
+                    <span class="material-icons-outlined">account_circle</span>
+                    <h3>Account</h3>
+                </a> -->
+                    <a (click)="deposit()" class="active">
+                        <span class="material-icons-outlined">add_circle_outline</span>
+                        <h3>Deposit</h3>
+                    </a>
+                    <a (click)="withdraw()" class="active">
+                        <span class="material-icons-outlined">upcoming</span>
+                        <h3>Withdraw</h3>
+                        
+                    </a>
+                    <a (click)="transfermoney()" class="active">
+                        <span class="material-icons-outlined">send</span>
+                        <h3>Transfer</h3>
+                    </a>
+
+                    <a  (click)="viewbalance()"class="active">
+                        <span class="material-icons-outlined">paid</span>
+                        <h3>Balance</h3>
+                    </a>
+
+                    <a (click)="viewtransaction()" class="active">
+                        <span class="material-icons-outlined">insert_chart_outlined</span>
+                        <h3>View Transaction</h3>
+                    </a>
+                    <a (click)="viewtransactionbyspecificdate()" class="active">
+                        <span class="material-icons-outlined">edit_calendar</span>
+                        <h3>Transaction in a Specific Date</h3>
+                    </a>
+                    <a href="#" (click)="logout">
+                        <span class="material-icons-outlined">logout</span>
+                        <h3>Log out</h3>
+                    </a>
+
+
+                </div>
+            </aside>
+            </div>
+            <div class="container-fluid col" *ngIf="ifDeposit">
+                <app-deposit></app-deposit>
+            </div>
+            <div class="container-fluid col" *ngIf="ifWithdraw">
+                <app-withdraw></app-withdraw>
+            </div>
+            <div class="container-fluid col" *ngIf="ifViewBalance">
+                <app-viewbalance></app-viewbalance>
+            </div>
+            <div class="container-fluid col" *ngIf="ifTransferMoney">
+                <app-transfermoney></app-transfermoney>
+            </div>
+            <div class="container-fluid col" *ngIf="ifViewTransaction">
+                <app-viewtransaction></app-viewtransaction>
+            </div>
+            <div class="container-fluid col" *ngIf="ifViewTransactionBySpecificDate">
+                <app-viewtransactionbydate></app-viewtransactionbydate>
+            </div>
+        </div>
+    </div>
+</body>

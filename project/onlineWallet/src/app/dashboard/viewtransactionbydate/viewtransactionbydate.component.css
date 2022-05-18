@@ -1,0 +1,34 @@
+
+body{
+    background-image:url("../../../assets/backgroundblue.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.walletbg{
+    position: static;
+    display: block;
+    width: 800px;
+    margin: 4rem auto;
+    background-color: white;
+
+    
+}
+
+.btn1{
+    border:none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    background-color:black;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.btn1:hover{
+    background: white;
+    border: 1px solid;
+    color:black;
+} 

@@ -1,0 +1,38 @@
+<main class="walletbg">
+
+    <div class="container">
+        <div class="row">
+
+
+            <h1> View Transaction</h1>
+            <button class="btn1 mt-3 mb-5" (click)="transaction()">Show transaction</button>
+            <table class="table table-hover" *ngIf="ifTransaction">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Transaction Type</th>
+                        <th>Amount</th>
+                        <th>Total Balance</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+           
+            <tbody>
+                <tr *ngFor="let transaction of transactiondata">
+                    <td>{{transaction.transactionid}}</td>
+                    <td>{{transaction.transactiontype}}</td>
+                    <td>{{transaction.amount}}</td>
+                    <td>{{transaction.totalbalance}}</td>
+                    <td>{{transaction.date}}</td>
+                    <td>{{transaction.time}}</td>
+                </tr>
+            </tbody>
+            </table>
+            
+
+
+        </div>
+    </div>
+
+</main>

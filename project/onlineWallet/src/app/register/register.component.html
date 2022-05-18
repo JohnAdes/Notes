@@ -1,0 +1,62 @@
+<body>
+    <main class="Form my-4 mx-2">
+
+        <div class="container">
+            
+                <div class="col-lg-7 px-5 pt-5">
+                   <img src="../../assets/wallet.jpg" >
+                   
+                    <h1>iWallet</h1>
+                    <h1>Create an account</h1>
+                    
+                  <form>
+
+                      <div class="form-row">
+                          <div class="col-lg-7">
+                            <h2>Firstname</h2>
+                              <input type="text" #firstname id="txtFname" placeholder="Enter your firstname" class="form-control my-2 p-3">
+                          </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-lg-7">
+                            <h2>Lastname</h2>
+                            <input type="text" #lastname id="txtLname" placeholder="Enter your lastname"  class="form-control my-2 p-3">
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="col-lg-7">
+                            <h2>Username</h2>
+                            <input type="username" #username id="txtUsername" placeholder="Enter your username" class="form-control my-2 p-3">
+                        </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-lg-7">
+                                <h2>Password</h2>
+                                <input type="password" #password id="txtPassword" placeholder="******" class="form-control my-2 p-3">
+                            </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-lg-7">
+                                    <h2>Initial Deposit</h2>
+                                    <input type="number" #balance id="txtbalance"placeholder="Enter amount" class="form-control my-2 p-3">
+                                </div>
+                                </div>
+                         <div class="form-row">
+                        <div class="col-lg-7">
+                            <button type="reset" class="btn1 mt-3 mb-5" (click)="register(firstname.value,lastname.value,username.value,password.value,balance.value)">Register</button>     
+                            <!-- <p>Already have an account? <a routerLink="">Login here</a></p> -->
+                        
+                        </div>
+                        </div>
+
+                  </form>
+              </div>
+
+        </div>
+   
+    </main>
+</body>
+
+   
